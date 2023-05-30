@@ -1,0 +1,109 @@
+:root {
+    --font-montserrat: Montserrat;
+    --color-green: #295135;
+    --color-brown: #9f6a38;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--font-montserrat);
+}
+
+/*-------------------------------------------------------*/
+
+.main-text {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.links a:hover {
+    color: rgb(186, 155, 252);
+    transition: 0.05s;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+.registrations-odd {
+    border: 1px solid beige;
+    border-radius: 10px;
+    background-color: beige;
+    padding: 20px;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.registrations-even {
+    border: 1px solid #C6EBBE;
+    border-radius: 10px;
+    background-color: #C6EBBE;
+    padding: 20px;
+    font-size: 20px;
+    white-space: nowrap;
+
+}
+
+.icons-wrapper {
+    float: right;
+    margin-right: 50px;
+}
+
+.x-mark {
+    margin-left: 20px;
+}
+
+.icon {
+    color: #49db14;
+    transition: transform 0.2s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 520px) {
+    .icons-wrapper {
+        margin-right: 0;
+    }
+    .x-mark {
+        margin-left: 5px;
+    }
+
+    .main-text {
+        font-size: 25px;
+    }
+
+    .links {
+        font-size: 16px;
+    }
+
+    .registrations-odd {
+        font-size: 16px;
+        padding: 16px;
+    }
+
+    .registrations-even {
+        font-size: 16px;
+        padding: 16px;
+    }
+}

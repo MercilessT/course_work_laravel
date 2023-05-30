@@ -25,9 +25,11 @@
         </div>
 
 
-        <div class="services_button">
-            <div class="text"><a href="{{ URL('sign_up') }}" target="_blank">ЗАПИСАТИСЬ</a></div>
-        </div>
+        <a href="{{ URL('sign_up') }}" target="_blank">
+            <div class="services_button">
+                <div class="text">ЗАПИСАТИСЬ</div>
+            </div>
+        </a>
     </div>
 @endsection
 

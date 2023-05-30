@@ -203,7 +203,7 @@ a {
 .footer .chapters {
     display: flex;
     grid-gap : 12px;
-    margin-left: 400px;
+    margin-left: 360px;
     flex-direction: column;
 }
 
@@ -669,7 +669,7 @@ button:hover {
     }
 
     .main .content {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .main .head1, .main .head2, .main .head3 {
@@ -741,4 +741,20 @@ button:hover {
         right: 100px;
     }
 
+    .ph-menu img {
+        height: 25px !important;
+        width: 25px !important;
+    }
+
+    .ph-menu {
+        padding-top: 2px;
+    }
+
+    .burger .burgerbtn {
+        height: 25px;
+    }
+
+    .footer .soc-networks {
+        margin-right: 25px;
+    }
 }

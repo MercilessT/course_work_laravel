@@ -27,21 +27,6 @@ class MainController extends Controller
         return view('about_us');
     }
 
-    public function sign_up() {
-        return view('sign_up');
-    }
-
-    public function sign_up_check(SignUpRequest $request) {
-        Session::flash('success_message', 'Успішно відправлено!');
-
-        $registration = new Registration();
-        $registration->name = $request->input('name');
-        $registration->phone_number = $request->input('phone');
-        $registration->save();
-
-        return back()->withInput();
-    }
-
     public function back_massage() {
         return $this->services_views('back_massage', 1, 'back_services');
     }
@@ -64,5 +49,18 @@ class MainController extends Controller
         $descriptionServices = CategoryService::where('category_id', $id)->get();
 
         return view($view, [$key_services => $services, 'descriptions' => $descriptionServices]);
+    }
+    public function sign_up() {
+        return view('sign_up');
+    }
+    public function sign_up_check(SignUpRequest $request) {
+        Session::flash('success_message', 'Успішно відправлено!');
+
+        $registration = new Registration();
+        $registration->name = $request->input('name');
+        $registration->phone_number = $request->input('phone');
+        $registration->save();
+
+        return back()->withInput();
     }
 }

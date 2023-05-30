@@ -153,7 +153,7 @@ a {
     flex-direction: column;
     width: 800px;
     font-size: 20px;
-    margin-right: 150px;
+    margin-right: 192px;
 }
 
 .main .all-text {
@@ -248,7 +248,7 @@ a {
 .footer .chapters {
     display: flex;
     grid-gap : 12px;
-    margin-left: 400px;
+    margin-left: 360px;
     flex-direction: column;
 }
 
@@ -600,42 +600,9 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 980px) {
-    .services_button1 .text, .services_button .text {
-        font-size: 25px;
-    }
-    .services_button1 {
-        border-radius: 20px;
-        width: 250px;
-        height: 70px;
-    }
-    .services_button {
-        border-radius: 20px;
-        width: 250px;
-        height: 70px;
-    }
-
-    .footer .soc-networks img {
-        width: 80px !important;
-        height: 80px !important;
-    }
-
-    .footer .soc-networks {
-        grid-gap: 40px;
-    }
-
-    .footer .two {
-        justify-content: normal;
-    }
-
-    .footer .contacts {
-        padding-left: 100px;
-    }
-}
-
 @media (max-width: 720px) {
     .main .about-mn {
-        font-size: 38px;
+        font-size: 30px;
     }
 
     .tx {
@@ -643,7 +610,7 @@ button:hover {
     }
 
     .main .major-text {
-        font-size: 26px;
+        font-size: 22px;
     }
 }
 
@@ -686,5 +653,101 @@ button:hover {
 
     .footer .contacts {
         padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .our_services {
+        font-size: 40px;
+    }
+
+    .main .content {
+        font-size: 14px;
+    }
+
+    .main .head1, .main .head2, .main .head3 {
+        font-size: 20px;
+    }
+
+    .main .head1 {
+        margin-left: 25px;
+    }
+
+    .main .head2 {
+        margin-left: 25px;
+    }
+
+    .but {
+        margin-top: 2px;
+    }
+
+    .footer .head-ch {
+        font-size: 12px;
+    }
+
+    .footer .head-con {
+        font-size: 12px;
+        margin-bottom: 19px;
+    }
+
+    .footer .button {
+        font-size: 9px;
+    }
+
+    .footer .contacts {
+        grid-gap: 8px;
+    }
+
+    .footer .con-loc img, .footer .con-phone img, .footer .con-mail img {
+        width: 10px !important;
+        height: 10px !important;
+    }
+
+    .footer .con-loc, .footer .con-phone, .footer .con-mail {
+        grid-gap : 5px;
+    }
+
+    .footer .full-logo img {
+        width: 48px !important;
+        height: 38px !important;
+    }
+
+    .footer .logo-text {
+        font-size: 12px;
+        margin-left: 230px;
+    }
+
+    .footer .soc-networks {
+        margin-top: 42px;
+    }
+
+    .menu .main-logo img {
+        width: 48px !important;
+        height: 38px !important;
+    }
+
+    .menu .logo-text {
+        font-size: 12px;
+    }
+
+    .ph-menu {
+        right: 100px;
+    }
+
+    .ph-menu img {
+        height: 25px !important;
+        width: 25px !important;
+    }
+
+    .ph-menu {
+        padding-top: 2px;
+    }
+
+    .burger .burgerbtn {
+        height: 25px;
+    }
+
+    .footer .soc-networks {
+        margin-right: 25px;
     }
 }

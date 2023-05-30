@@ -18,9 +18,11 @@
         <div class="welcome">
             <div class="major">MASSAGE NEST</div>
             <div class="minor">Дозвольте собі зануритися в<br>світ розслаблення та енергії</div>
-            <div class="services_button1">
-                <div class="text1"><a href="{{ URL('sign_up') }}" target="_blank">Записатись</a></div>
-            </div>
+            <a href="{{ URL('sign_up') }}" target="_blank">
+                <div class="services_button1">
+                    <div class="text1">Записатись</div>
+                </div>
+            </a>
         </div>
 
 
@@ -74,10 +76,12 @@
                 </div>
             </div>
 
-            <div class="services_button">
-                <div class="text">ВСІ ПОСЛУГИ</div>
-            </div>
-            <div class="line-b"></div>
+            <a href="{{ URL('services') }}">
+                <div class="services_button">
+                    <div class="text">ВСІ ПОСЛУГИ</div>
+                </div>
+                <div class="line-b"></div>
+            </a>
         </div>
 
 

@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>@yield('title')</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/logo_sign.png') }}">
 </head>
 <body>
 <div class="menu">

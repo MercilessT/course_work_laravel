@@ -1,16 +1,26 @@
 @extends('layout')
 
 @section('title')
-    Про нас
+    Масаж обличчя
 @endsection
 
 @section('main_content')
     <link rel="stylesheet" href="{{ URL::asset('css/massage_services.css') }}">
+    <div class="main">
+        <div class="right-menu">
+            <ul class="menu-list">
+                <li><a href="{{ URL('services') }}" class="bm button">ПОСЛУГИ</a></li>
+                <li><a href="{{ URL('about_us') }}" class="bm button">ПРО НАС</a></li>
+                <li><a href="{{ URL('contacts') }}" class="bm button">КОНТАКТИ</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="indent"><div>
     @foreach($face_services as $service)
-        <div>{{ $service->name }}</div>
+        <div class="services-bd">{{ $service->name }}</div>
         @foreach($descriptions as $description)
             @if($description->service_id === $service->id)
-                <div> {{ $description->description }} </div>
+                <div class="description-bd"> {{ $description->description }} </div>
             @endif
         @endforeach
     @endforeach

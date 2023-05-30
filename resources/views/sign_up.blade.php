@@ -5,6 +5,9 @@
     <title>Реєстрація</title>
     <link rel="stylesheet" href="{{ URL::asset('css/sign_up.css') }}">
     <link href="https://fonts.cdnfonts.com/css/helvetica-2" rel="stylesheet">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/logo_sign.png') }}">
 </head>
 <body>
 <div class="container">

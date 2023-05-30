@@ -54,7 +54,7 @@ body {
     white-space: nowrap;
 }
 
-.main a {
+.main .prices a {
     text-decoration: none;
     color: black;
 }
@@ -92,6 +92,71 @@ body {
 }
 
 
+/* ---------------------main-----------------------*/
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.our_services {
+    padding-top: 40px;
+    font-size: 80px;
+    font-style: italic;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.prices {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    margin-top: 35px;
+
+}
+
+.prices .price {
+    text-align: center;
+    font-size: 24px;
+    width: 600px;
+    margin: auto;
+}
+
+.prices .price::after {
+    content: '';
+    background-color: black;
+    height: 0.5px;
+    display: block;
+    margin-top:20px;
+}
+
+.lines .lines {
+    border-top: 1px solid black;
+    width: 700px;
+    margin: auto;
+
+}
+
+.services_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 2px solid #295135;
+    width: 192px;
+    height: 53.6px;
+    color: #295135;
+    margin: 40px auto 70px;
+}
+
+.services_button .text {
+    letter-spacing: 0.02em;
+    font-size: 17.6px;
+}
+
+.services_button .text a {
+    color: var(--color-green);
+}
 
 
 /* ---------------------footer-----------------------*/
@@ -143,7 +208,7 @@ body {
 .footer .chapters {
     display: flex;
     grid-gap : 12px;
-    margin-left: 400px;
+    margin-left: 360px;
     flex-direction: column;
 }
 
@@ -291,4 +356,326 @@ button:hover {
     display: flex;
     align-items: center;
     padding: 0 30px;
+}
+
+/* ------------------------------------------media------------------------------------------ */
+
+@media (max-width: 1470px) {
+    .menu .soc-networks {
+        margin-left: 40px;
+    }
+
+    .menu .pages {
+        grid-gap :30px;
+        margin-left: 40px;
+    }
+
+    .menu .location-icon {
+        margin-left: 40px;
+        margin-top: -35px;
+    }
+
+    .menu .phone-icon {
+        margin-left: 40px;
+        margin-top: -35px;
+    }
+
+    .footer .chapters {
+        display: flex;
+        grid-gap : 12px;
+        margin-left: 215px;
+        flex-direction: column;
+    }
+
+    .footer .contacts {
+        display: flex;
+        grid-gap : 7.5px;
+        margin-left: 205px;
+        margin-top: 11px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1350px) {
+    .menu .soc-networks, .menu .pages, .menu .location-icon, .menu .location-text, .menu .phone-icon, .menu .phone-text {
+        display: none;
+    }
+
+    .ph-menu {
+        display: block;
+        position: absolute;
+        right: 110px;
+        top: 45px;
+    }
+
+    .burger {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .burger .burgerbtn {
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 30px;
+    }
+
+    .burger .burgerbtn::before, .burger .burgerbtn::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: white;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .burger .burgerbtn::before {
+        top: 0;
+        transform: translateY(25%);
+    }
+
+    .burger .burgerbtn::after {
+        top: calc(100% - 4px);
+        transform: translateY(-25%);
+    }
+
+    .burgerbtn.is-active .burger-line{
+        transform: scale(0);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .burgerbtn.is-active::before{
+        transform: translateY(-50%) rotate(45deg);
+        top: 50%;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .burgerbtn.is-active::after{
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .burger-line {
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        border-radius: 2px;
+        transform: translateY(-50%);
+        top: 50%;
+        right: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu .container {
+        padding-right: 30px;
+    }
+
+    .footer .logo::after {
+        display: none;
+    }
+
+    .footer .container {
+        display: block;
+        margin: 0 auto;
+        max-width: 1920px;
+        height: 360px;
+        color: white;
+        align-items: normal;
+        justify-content: normal;
+    }
+
+    .footer .logo {
+        display: flex;
+        margin-left: 30px;
+        margin-top: 38px;
+    }
+
+    .footer .logo-text {
+        position: absolute;
+        margin-left: 254px;
+        margin-top: 34px;
+    }
+
+    .footer .two {
+        display: flex;
+        margin-top: 35px;
+    }
+
+    .footer .logo-and-soc {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0;
+        margin-bottom: 25px;
+        justify-content: space-between;
+    }
+
+    .footer .soc-networks {
+        margin-right: 50px;
+        margin-top: 51px;
+    }
+
+    .footer .chapters {
+        margin-left: 30px;
+    }
+
+    .footer .contacts {
+        margin-top: 6px;
+        margin-right: 48px;
+        margin-left: 30px;
+    }
+
+    .menu .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer .head-ch, .footer .head-con {
+        font-size: 20px;
+    }
+    .footer .con-loc, .footer .con-phone, .footer .con-mail {
+        font-size: 12px;
+    }
+    .footer .button {
+        font-size: 12px;
+    }
+
+    .footer .contacts {
+        grid-gap : 4px;
+    }
+
+    .footer .head-con {
+        margin-bottom: 23px;
+    }
+
+    .footer .container {
+        height: 310px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .our_services {
+        font-size: 40px;
+    }
+
+    .but {
+        margin-top: 2px;
+    }
+
+    .footer .head-ch {
+        font-size: 12px;
+    }
+
+    .footer .head-con {
+        font-size: 12px;
+        margin-bottom: 19px;
+    }
+
+    .footer .button {
+        font-size: 9px;
+    }
+
+    .footer .contacts {
+        grid-gap: 8px;
+    }
+
+    .footer .con-loc img, .footer .con-phone img, .footer .con-mail img {
+        width: 10px !important;
+        height: 10px !important;
+    }
+
+    .footer .con-loc, .footer .con-phone, .footer .con-mail {
+        grid-gap : 5px;
+    }
+
+    .footer .full-logo img {
+        width: 48px !important;
+        height: 38px !important;
+    }
+
+    .footer .logo-text {
+        font-size: 12px;
+        margin-left: 230px;
+    }
+
+    .footer .soc-networks {
+        margin-top: 42px;
+    }
+
+    .menu .main-logo img {
+        width: 48px !important;
+        height: 38px !important;
+    }
+
+    .menu .logo-text {
+        font-size: 12px;
+    }
+
+    .ph-menu {
+        right: 100px;
+    }
+
+    .prices .price {
+        font-size: 12px;
+    }
+
+    .prices .price {
+        width: 280px;
+    }
+
+    .prices .price::after {
+        height: 0.1px;
+    }
+
+    .services_button {
+        border-radius: 15px;
+        width: 170px;
+        height: 53.6px;
+        border: 1px solid #295135;
+    }
+
+    .services_button .text {
+        font-size: 14px;
+    }
+
+    .ph-menu img {
+        height: 25px !important;
+        width: 25px !important;
+    }
+
+    .ph-menu {
+        padding-top: 2px;
+    }
+
+    .burger .burgerbtn {
+        height: 25px;
+    }
+
+    .footer .soc-networks {
+        margin-right: 25px;
+    }
+}
+
+
+
+.services-bd {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.description-bd {
+    text-align: center;
+    padding: 20px 40px 0 40px;
+    line-height: 1.6em;
+    font-size: 20px;
 }
